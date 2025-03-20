@@ -9,14 +9,14 @@ The PAPILA_DBv1 dataset contains clinical data, fundus images, and segmentation 
 Contains spreadsheet files with clinical parameters for 244 patients.
 Each patient has two records (one for the right eye (OD) and one for the left eye (OS )
 Data includes:
--> Age, Gender
--> Diagnosis (0 = Healthy, 1 = Glaucoma, 2 = Suspicious)
--> Refractive error
--> Phakic/Pseudophakic status (Lens removed or not)
--> Intraocular pressure (IOP)
--> Pachymetry (Corneal thickness)
-=> Axial length
--> Mean defect (Visual field loss measurement)
+1)Age, Gender
+2)Diagnosis (0 = Healthy, 1 = Glaucoma, 2 = Suspicious)
+3)Refractive error
+4)Phakic/Pseudophakic status (Lens removed or not)
+5)Intraocular pressure (IOP)
+6)Pachymetry (Corneal thickness)
+7)Axial length
+8)Mean defect (Visual field loss measurement)
 
 2️⃣ ExpertsSegmentations/
 
@@ -29,12 +29,14 @@ Copy
 Edit
 RETXXX_OD_cup_exp1.txt   # Patient XXX, Right Eye, Cup, Annotated by Expert 1
 RETXXX_OS_disc_exp2.txt  # Patient XXX, Left Eye, Disc, Annotated by Expert 2
+
 3️⃣ FundusImages/
 
 Contains retinal fundus images for both left and right eyes.
 488 images in JPEG format (each patient has both eyes captured).
 Image size: 2576 × 1934 pixels
 Naming format follows the segmentation files (e.g., RETXXX_OD.jpg for the right eye).
+
 4️⃣ HelpCode/
 
 Contains Python scripts and notebooks to help researchers process the dataset.
@@ -42,17 +44,21 @@ Likely includes utilities for:
 Reading and visualizing fundus images
 Loading and overlaying segmentation masks
 Extracting clinical features for analysis
+
 💡 How to Use PAPILA in Your AI Model
+
 ✅ Multi-Modal Learning:
 
 Combine fundus image features with clinical data (CDR, IOP, MD, etc.).
 Use CNN (ResNet, EfficientNet, Vision Transformers) for feature extraction from images.
 Use Random Forest or another ML model to process numerical clinical data.
+
 ✅ Explainability with XAI:
 
 Apply Grad-CAM on fundus images.
 Use SHAP to analyze feature importance from clinical data.
 Implement Graph Attention Networks (GATs) to model relationships between features.
+
 ✅ Segmentation-Assisted Diagnosis:
 
 Use optic disc and optic cup segmentation to calculate VCDR, HCDR, and neuroretinal rim area.
