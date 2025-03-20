@@ -9,14 +9,14 @@ The PAPILA_DBv1 dataset contains clinical data, fundus images, and segmentation 
 Contains spreadsheet files with clinical parameters for 244 patients.
 Each patient has two records (one for the right eye (OD) and one for the left eye (OS )
 Data includes:
-1)Age, Gender
-2)Diagnosis (0 = Healthy, 1 = Glaucoma, 2 = Suspicious)
-3)Refractive error
-4)Phakic/Pseudophakic status (Lens removed or not)
-5)Intraocular pressure (IOP)
-6)Pachymetry (Corneal thickness)
-7)Axial length
-8)Mean defect (Visual field loss measurement)
+  Age, Gender
+  Diagnosis (0 = Healthy, 1 = Glaucoma, 2 = Suspicious)
+  Refractive error
+  Phakic/Pseudophakic status (Lens removed or not)
+  Intraocular pressure (IOP)
+  Pachymetry (Corneal thickness)
+  Axial length
+  Mean defect (Visual field loss measurement)
 
 2️⃣ ExpertsSegmentations/
 
