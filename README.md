@@ -5,7 +5,7 @@ Early Diagnosis with CDR, Deep Features & Ensemble Learning
 
 ✅ Project Overview
 This research project focuses on building a multi-modal AI pipeline for glaucoma detection by combining:
-✔ Clinical features (like Cup-to-Disc Ratio - CDR)
-✔ Deep image features extracted using ResNet50
-✔ Ensemble learning, threshold tuning, and explainability tools
+Line one Clinical features (like Cup-to-Disc Ratio - CDR)
+Line two Deep image features extracted using ResNet50
+Line three Ensemble learning, threshold tuning, and explainability tools
 
