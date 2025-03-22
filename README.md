@@ -12,3 +12,9 @@ This research project focuses on building a multi-modal AI pipeline for glaucoma
 
 3) Line three Ensemble learning, threshold tuning, and explainability tools
 
+# 📌 Datasets Used
+
+🟢 ORIGA Dataset: Fundus images + Segmentation masks + Labels
+
+🔵 ACRIMA Dataset: Fundus images + Glaucoma labels (No masks)
+
