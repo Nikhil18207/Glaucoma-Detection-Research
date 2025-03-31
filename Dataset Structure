@@ -1,0 +1,15 @@
+RIM-ONE_DL_images/
+│── partitioned_by_hospital/
+│   ├── test_set/
+│   │   ├── glaucoma/         # Glaucoma images in the test set
+│   │   └── normal/           # Normal images in the test set
+│   └── training_set/
+│       ├── glaucoma/         # Glaucoma images in the training set
+│       └── normal/           # Normal images in the training set
+│── partitioned_randomly/
+│   ├── test_set/
+│   │   ├── glaucoma/         # Glaucoma images in the test set
+│   │   └── normal/           # Normal images in the test set
+│   └── training_set/
+│       ├── glaucoma/         # Glaucoma images in the training set
+│       └── normal/           # Normal images in the training set
