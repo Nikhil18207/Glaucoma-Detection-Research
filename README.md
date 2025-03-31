@@ -76,14 +76,14 @@ This project aims to develop an efficient, explainable, and robust Automated Gla
 
 ## Batch 6: Cross-Validation with Random Forest & XGBoost (SMOTE Applied)
 
-- **Models**: Random Forest (Best Hyperparameters from GridSearchCV), XGBoost (Best Hyperparameters from GridSearchCV)  
-- **Techniques Applied**: Feature Extraction using ResNet50, SMOTE for oversampling, 5-fold Cross-Validation.  
-- **Performance Metrics Recorded**: Mean Accuracy, Precision, Recall, F1-Score, AUC-ROC.  
+- **Models**: Random Forest (Best Hyperparameters from GridSearchCV), XGBoost (Best Hyperparameters from GridSearchCV)<br>
+- **Techniques Applied**: Feature Extraction using ResNet50, SMOTE for oversampling, 5-fold Cross-Validation.<br>  
+- **Performance Metrics Recorded**: Mean Accuracy, Precision, Recall, F1-Score, AUC-ROC.<br>  
 
 
-- **Models**: Random Forest (Best Hyperparameters from GridSearchCV)  
-- **Techniques Applied**: Feature Extraction using ResNet50, SMOTE for oversampling, 5-fold Cross-Validation.  
-- **Performance Metrics Recorded**: Mean Accuracy, Precision, Recall, F1-Score, AUC-ROC.  
+- **Models**: Random Forest (Best Hyperparameters from GridSearchCV)<br>  
+- **Techniques Applied**: Feature Extraction using ResNet50, SMOTE for oversampling, 5-fold Cross-Validation.<br>  
+- **Performance Metrics Recorded**: Mean Accuracy, Precision, Recall, F1-Score, AUC-ROC.<br>  
 
 **Table 6:** Cross-Validation Results for Random Forest & XGBoost with SMOTE  
 
@@ -98,79 +98,73 @@ This project aims to develop an efficient, explainable, and robust Automated Gla
 
 ## Batch 1: CNN Architectures (Initial Model Testing)
 
-  -> Models: EfficientNet-B0, ResNet50, VGG16, AlexNet, InceptionV3.
-  -> Best Performing Model: EfficientNet-B0.
-  -> Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
+  -> Models: EfficientNet-B0, ResNet50, VGG16, AlexNet, InceptionV3.<br>
+  -> Best Performing Model: EfficientNet-B0.<br>
+  -> Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.<br>
 
 ## Batch 2: Hybrid Model Implementation (CNN + Random Forest)
-   -> Models: ResNet50 + Random Forest, EfficientNet-B0 + Random Forest.
-   -> Best Performing Model: ResNet50 + Random Forest.
-   -> Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
+   -> Models: ResNet50 + Random Forest, EfficientNet-B0 + Random Forest.<br>
+   -> Best Performing Model: ResNet50 + Random Forest.<br>
+   -> Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.<br>
 
 ## Batch 4: Feature Fusion
-   -> Models: ResNet50 + EfficientNet-B0 Feature Fusion.
-   -> Best Performing Model: ResNet50 + EfficientNet-B0 Feature Fusion.
-   -> Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
+   -> Models: ResNet50 + EfficientNet-B0 Feature Fusion.<br>
+   -> Best Performing Model: ResNet50 + EfficientNet-B0 Feature Fusion.<br>
+   -> Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.<br>
 
 ## Batch 5: Hyperparameter Tuning (Random Forest)
-   -> Techniques: Optuna Hyperparameter Tuning.
-   -> Best Performing Model: Random Forest (Tuned).
-   -> Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
+   -> Techniques: Optuna Hyperparameter Tuning.<br>
+   -> Best Performing Model: Random Forest (Tuned).<br>
+   -> Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.<br>
 
 ## Batch 6: Hyperparameter Tuning (XGBoost)
-   -> Techniques: Optuna Hyperparameter Tuning.
-   -> Best Performing Model: XGBoost (Tuned).
-   -> Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
+   -> Techniques: Optuna Hyperparameter Tuning.<br>
+   -> Best Performing Model: XGBoost (Tuned).<br>
+   -> Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.<br>
 
 ## Batch 7: Cross-Validation (K-Fold)
-   -> Models: Random Forest, XGBoost, LightGBM.
-   -> Cross-Validation Technique: K-Fold (n=5).
-   -> Performance Metrics Recorded: Mean Accuracy, Mean Precision, Mean Recall, Mean F1-Score, Mean AUC-ROC, Average Confusion Matrix.
+   -> Models: Random Forest, XGBoost, LightGBM.<br>
+   -> Cross-Validation Technique: K-Fold (n=5).<br>
+   -> Performance Metrics Recorded: Mean Accuracy, Mean Precision, Mean Recall, Mean F1-Score, Mean AUC-ROC, Average Confusion Matrix.<br>
 
 ## Batch 8: Feature Importance Analysis
-   -> Models: XGBoost, LightGBM.
-   -> Techniques: Feature Importance Ranking.
-   -> Best Performing Model: XGBoost.
+   -> Models: XGBoost, LightGBM.<br>
+   -> Techniques: Feature Importance Ranking.<br>
+   -> Best Performing Model: XGBoost.<br>
 
 ## Top Features Identified: 10 most important features with significance scores.
   
-  -> Feature 556: Importance Score = 0.0155
-  -> Feature 292: Importance Score = 0.0157
-  -> Feature 695: Importance Score = 0.0159
-  -> Feature 458: Importance Score = 0.0165
-  -> Feature 1454: Importance Score = 0.0165
-  -> Feature 1710: Importance Score = 0.0177
-  -> Feature 1902: Importance Score = 0.0232
-  -> Feature 1214: Importance Score = 0.0256
-  -> Feature 1600: Importance Score = 0.0270
-  -> Feature 762: Importance Score = 0.0297
+  -> Feature 556: Importance Score = 0.0155<br>
+  -> Feature 292: Importance Score = 0.0157<br>
+  -> Feature 695: Importance Score = 0.0159<br>
+  -> Feature 458: Importance Score = 0.0165<br>
+  -> Feature 1454: Importance Score = 0.0165<br>
+  -> Feature 1710: Importance Score = 0.0177<br>
+  -> Feature 1902: Importance Score = 0.0232<br>
+  -> Feature 1214: Importance Score = 0.0256<br>
+  -> Feature 1600: Importance Score = 0.0270<br>
+  -> Feature 762: Importance Score = 0.0297<br>
 
 These feature indices correspond to specific CNN-based features extracted by the ResNet50 model. They were ranked based on their impact on model prediction performance using XGBoost's feature importance calculation.
 
 ## Possible Future Enhancements
-   -Add Explainability Techniques:
-   - Include Grad-CAM, SHAP, and LIME to highlight important features for glaucoma detection. This will improve interpretability and strengthen your work's clinical relevance.
+  -Add Explainability Techniques:<br>
+    -> Include Grad-CAM, SHAP, and LIME to highlight important features for glaucoma detection. This will improve interpretability and strengthen your work's clinical relevance.<br>
 
-Compare Against State-of-the-Art Models:
+  -Compare Against State-of-the-Art Models:<br>
+    -> Compare your best-performing models against recent state-of-the-art methods from published literature on glaucoma detection.<br>
 
-Compare your best-performing models against recent state-of-the-art methods from published literature on glaucoma detection.
+  -Cross-Dataset Evaluation:<br>
+    -> Test your models on the REFUGE dataset and compare performance to ensure robustness and generalization.<br>
 
-Cross-Dataset Evaluation:
+  -Ablation Studies:<br>
+    -> Provide ablation studies to justify your architectural choices (e.g., why EfficientNet-B0 + Random Forest works best).<br>
 
-Test your models on the REFUGE dataset and compare performance to ensure robustness and generalization.
-
-Ablation Studies:
-
-Provide ablation studies to justify your architectural choices (e.g., why EfficientNet-B0 + Random Forest works best).
-
-Visualizations:
-
-Include t-SNE/PCA visualizations to show feature separability between glaucoma and non-glaucoma samples.
-
-Visualize confusion matrices for the best models on both datasets.
-
-Highlight Clinical Relevance:
-
-Discuss the potential real-world application of your model, including deployment strategies and benefits to ophthalmologists.
+  -Visualizations:<br>
+    -> Include t-SNE/PCA visualizations to show feature separability between glaucoma and non-glaucoma samples.<br> 
+    -> Visualize confusion matrices for the best models on both datasets.<br>
+ 
+  -Highlight Clinical Relevance:<br>
+    -> Discuss the potential real-world application of your model, including deployment strategies and benefits to ophthalmologists.<br>
 
 
