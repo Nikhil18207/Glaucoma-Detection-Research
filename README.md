@@ -1,91 +1,49 @@
-# 🔬 Glaucoma Detection using Multi-Modal AI
+Batch 1: CNN Architectures (Initial Model Testing)
+Models: EfficientNet-B0, ResNet50, VGG16, AlexNet, InceptionV3.
 
-Early Diagnosis with CDR, Deep Features & Ensemble Learning
-🧠 ORIGA & ACRIMA Datasets | 🔍 Explainability with Grad-CAM (Ongoing)
+Best Performing Model: EfficientNet-B0.
 
-✅ Project Overview
-This research project focuses on building a multi-modal AI pipeline for glaucoma detection by combining:
+Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
 
-1) Clinical features (like Cup-to-Disc Ratio - CDR)
+Batch 2: ResNet50 Feature Extraction + XGBoost
+Extracted features using ResNet50 from your retinal fundus images.
 
-2) Line two Deep image features extracted using ResNet50
+Applied XGBoost Classifier on these extracted features.
 
-3) Line three Ensemble learning, threshold tuning, and explainability tools
+Hyperparameter Tuning using GridSearchCV.
 
-# 📌 Datasets Used
+Evaluated using 5-Fold Cross-Validation.
 
-🟢 ORIGA Dataset: Fundus images + Segmentation masks + Labels
+Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
 
-🔵 ACRIMA Dataset: Fundus images + Glaucoma labels (No masks)
+Visualizations: ROC Curve (not plotted yet).
 
-# 🎯 Completed Modules So Far
+Batch 3: ResNet50 Feature Extraction + LightGBM
+Extracted features using ResNet50 (same as above).
 
-1️⃣ Data Preprocessing
+Applied LightGBM Classifier on these extracted features.
 
-✔ Extracted Cup Area, Disc Area, and computed CDR from ORIGA segmentation masks
+Hyperparameter Tuning using GridSearchCV.
 
-✔ Cleaned noisy/missing masks by skipping unusable files
+Evaluated using Single Run (No Cross-Validation).
 
-✔ Normalized CDR and saved metadata in cdr_values_fixed.csv
+Achieved Highest Accuracy of 98.85% with AUC-ROC of 0.9868.
 
-2️⃣ Clinical Feature Integration
+Visualizations: ROC Curve (not plotted yet).
 
-✔ Merged CDR values with ORIGA metadata into origa_final.csv
+Batch 4: Comparative Analysis of All Models
+Compared Initial CNN Models (EfficientNet, ResNet50, VGG16, AlexNet, InceptionV3) against XGBoost and LightGBM.
 
-✔ Normalized CDR → CDR_Norm for ML compatibility
+Structured tables summarizing performance for each model.
 
-3️⃣ Classical Machine Learning (CDR-Only)
+Provided insight into the best performing models for each stage.
 
-✔ Trained Random Forest and XGBoost on CDR-only features
+Batch 5: AUC-ROC Curve Plotting (In Progress)
+Need to generate AUC-ROC Curves for:
 
-✔ Tuned models and evaluated with:
+EfficientNet-B0, ResNet50, VGG16, AlexNet, InceptionV3.
 
-Accuracy
+XGBoost (Cross-Validation averaged AUC).
 
-F1-score (focused on Glaucoma class)
-
-✔ Applied SMOTE to handle class imbalance and improve recall
-
-4️⃣ Deep Feature Extraction
-
-✔ Extracted ResNet50 features from ORIGA fundus images
-
-✔ Saved image embeddings in resnet_features.csv
-
-5️⃣ Feature Fusion
-
-✔ Combined CDR + Deep Features → merged_features.csv
-
-6️⃣ Advanced Modeling
-
-✔ Trained on fused features using:
-
-    1) Random Forest (Tuned)
-
-    2) XGBoost (Tuned with F1-score as the target)
-
-    3) Stacking Ensemble (RF + XGB + Logistic Regression)
-
-    4) Soft Voting Ensemble
-
-✔ Performance:
-
-✅ Stacked Model Accuracy: ~76%
-
-✅ F1-score (Glaucoma class): ~0.59
-
-7️⃣ Threshold Tuning
-✔ Performed custom threshold search to optimize Glaucoma detection
-✔ Achieved:
-
-High recall for Glaucoma class
-
-Balanced precision & F1-score using best threshold ≈ 0.17–0.29
-
-8️⃣ K-Fold Cross Validation
-✔ Applied K-Fold CV during hyperparameter tuning to improve generalization & reduce variance
-
-9️⃣ Model Training from Scratch
-✔ Trained ResNet50 on ORIGA images from scratch for upcoming Grad-CAM visualizations
-✔ Built a custom PyTorch Dataset class with error handling for missing images
+LightGBM (Single run AUC).
 
