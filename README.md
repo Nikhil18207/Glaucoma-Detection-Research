@@ -1,49 +1,77 @@
+## Automated Glaucoma Detection System
+
+This project aims to develop an efficient, explainable, and robust Automated Glaucoma Detection System using multiple CNN architectures, classical machine learning classifiers, and hybrid models. The models are evaluated on the RIM-ONE DL and REFUGE datasets.
+
+Dataset Links
+
+RIM-ONE DL Dataset: Link
+
+REFUGE Dataset: Link
+
+Batches Overview
+
 Batch 1: CNN Architectures (Initial Model Testing)
+
 Models: EfficientNet-B0, ResNet50, VGG16, AlexNet, InceptionV3.
 
 Best Performing Model: EfficientNet-B0.
 
 Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
 
-Batch 2: ResNet50 Feature Extraction + XGBoost
-Extracted features using ResNet50 from your retinal fundus images.
+Batch 2: Hybrid Model Implementation (CNN + Random Forest)
 
-Applied XGBoost Classifier on these extracted features.
+Models: ResNet50 + Random Forest, EfficientNet-B0 + Random Forest.
 
-Hyperparameter Tuning using GridSearchCV.
-
-Evaluated using 5-Fold Cross-Validation.
+Best Performing Model: ResNet50 + Random Forest.
 
 Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
 
-Visualizations: ROC Curve (not plotted yet).
+Batch 3: Ensemble Learning
 
-Batch 3: ResNet50 Feature Extraction + LightGBM
-Extracted features using ResNet50 (same as above).
+Models: Soft Voting, Hard Voting, Stacking Ensemble.
 
-Applied LightGBM Classifier on these extracted features.
+Best Performing Model: Stacking Ensemble (ResNet50 + Random Forest + EfficientNet-B0).
 
-Hyperparameter Tuning using GridSearchCV.
+Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
 
-Evaluated using Single Run (No Cross-Validation).
+Batch 4: Feature Fusion
 
-Achieved Highest Accuracy of 98.85% with AUC-ROC of 0.9868.
+Models: ResNet50 + EfficientNet-B0 Feature Fusion.
 
-Visualizations: ROC Curve (not plotted yet).
+Best Performing Model: ResNet50 + EfficientNet-B0 Feature Fusion.
 
-Batch 4: Comparative Analysis of All Models
-Compared Initial CNN Models (EfficientNet, ResNet50, VGG16, AlexNet, InceptionV3) against XGBoost and LightGBM.
+Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
 
-Structured tables summarizing performance for each model.
+Batch 5: Hyperparameter Tuning (Random Forest)
 
-Provided insight into the best performing models for each stage.
+Techniques: Optuna Hyperparameter Tuning.
 
-Batch 5: AUC-ROC Curve Plotting (In Progress)
-Need to generate AUC-ROC Curves for:
+Best Performing Model: Random Forest (Tuned).
 
-EfficientNet-B0, ResNet50, VGG16, AlexNet, InceptionV3.
+Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
 
-XGBoost (Cross-Validation averaged AUC).
+Batch 6: Hyperparameter Tuning (XGBoost)
 
-LightGBM (Single run AUC).
+Techniques: Optuna Hyperparameter Tuning.
 
+Best Performing Model: XGBoost (Tuned).
+
+Performance Metrics Recorded: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
+
+Batch 7: Cross-Validation (K-Fold)
+
+Models: Random Forest, XGBoost, LightGBM.
+
+Cross-Validation Technique: K-Fold (n=5).
+
+Performance Metrics Recorded: Mean Accuracy, Mean Precision, Mean Recall, Mean F1-Score, Mean AUC-ROC, Average Confusion Matrix.
+
+Batch 8: Feature Importance Analysis
+
+Models: XGBoost, LightGBM.
+
+Techniques: Feature Importance Ranking.
+
+Best Performing Model: XGBoost.
+
+Top Features Identified: 10 most important features with significance scores.
