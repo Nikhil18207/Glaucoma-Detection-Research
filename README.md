@@ -11,9 +11,9 @@ This project aims to develop an efficient, explainable, and robust Automated Gla
 ### Batches Overview
 
 ## Batch 1: CNN Architectures (Initial Model Testing)
-- **Models**: EfficientNet-B0, ResNet50, VGG16, AlexNet, InceptionV3.
-- **Best Performing Model**: EfficientNet-B0.
-- **Performance Metrics Recorded**: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
+- **Models**: EfficientNet-B0, ResNet50, VGG16, AlexNet, InceptionV3.<br>
+- **Best Performing Model**: EfficientNet-B0.<br>
+- **Performance Metrics Recorded**: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.<br>
 
 **Table 1:** Performance of Various CNN Models
 
@@ -27,9 +27,9 @@ This project aims to develop an efficient, explainable, and robust Automated Gla
 
 ## Batch 2: Fine-Tuning (VGG16, AlexNet)  
 
-- **Models**: VGG16, AlexNet  
-- **Techniques Applied**: Adding Dropout Layers, Using Focal Loss  
-- **Performance Metrics Recorded**: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.  
+- **Models**: VGG16, AlexNet<br>  
+- **Techniques Applied**: Adding Dropout Layers, Using Focal Loss<br>  
+- **Performance Metrics Recorded**: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.<br>  
 
 **Table 2:** Performance of VGG16 and AlexNet After Fine-Tuning  
 
@@ -40,9 +40,9 @@ This project aims to develop an efficient, explainable, and robust Automated Gla
 
 ## Batch 3: ResNet50 Fine-Tuning  
 
-- **Models**: ResNet50  
-- **Techniques Applied**: Data Augmentation, Weight Adjustment  
-- **Performance Metrics Recorded**: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.  
+- **Models**: ResNet50<br>  
+- **Techniques Applied**: Data Augmentation, Weight Adjustment<br>  
+- **Performance Metrics Recorded**: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.<br>  
 
 **Table 3:** Performance of Fine-Tuned ResNet50  
 
@@ -52,9 +52,9 @@ This project aims to develop an efficient, explainable, and robust Automated Gla
 
 ## Batch 4: AlexNet Random Forest Hybrid Model  
 
-- **Models**: AlexNet + Random Forest  
-- **Techniques Applied**: Feature Extraction, Random Forest Classifier  
-- **Performance Metrics Recorded**: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.  
+- **Models**: AlexNet + Random Forest<br>  
+- **Techniques Applied**: Feature Extraction, Random Forest Classifier<br>  
+- **Performance Metrics Recorded**: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.<br>  
 
 **Table 4:** Performance of Random Forest on AlexNet Extracted Features  
 
@@ -64,9 +64,9 @@ This project aims to develop an efficient, explainable, and robust Automated Gla
 
 ## Batch 5: EfficientNet-B0 Fine-Tuning  
 
-- **Models**: EfficientNet-B0  
-- **Techniques Applied**: Using Weighted CrossEntropyLoss, Data Augmentation  
-- **Performance Metrics Recorded**: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.  
+- **Models**: EfficientNet-B0<br>  
+- **Techniques Applied**: Using Weighted CrossEntropyLoss, Data Augmentation<br>  
+- **Performance Metrics Recorded**: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.<br>  
 
 **Table 5:** Performance of Fine-Tuned EfficientNet-B0  
 
@@ -146,5 +146,31 @@ This project aims to develop an efficient, explainable, and robust Automated Gla
   -> Feature 762: Importance Score = 0.0297
 
 These feature indices correspond to specific CNN-based features extracted by the ResNet50 model. They were ranked based on their impact on model prediction performance using XGBoost's feature importance calculation.
+
+## Possible Future Enhancements
+   -Add Explainability Techniques:
+   - Include Grad-CAM, SHAP, and LIME to highlight important features for glaucoma detection. This will improve interpretability and strengthen your work's clinical relevance.
+
+Compare Against State-of-the-Art Models:
+
+Compare your best-performing models against recent state-of-the-art methods from published literature on glaucoma detection.
+
+Cross-Dataset Evaluation:
+
+Test your models on the REFUGE dataset and compare performance to ensure robustness and generalization.
+
+Ablation Studies:
+
+Provide ablation studies to justify your architectural choices (e.g., why EfficientNet-B0 + Random Forest works best).
+
+Visualizations:
+
+Include t-SNE/PCA visualizations to show feature separability between glaucoma and non-glaucoma samples.
+
+Visualize confusion matrices for the best models on both datasets.
+
+Highlight Clinical Relevance:
+
+Discuss the potential real-world application of your model, including deployment strategies and benefits to ophthalmologists.
 
 
